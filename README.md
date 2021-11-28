@@ -1,21 +1,33 @@
-- Install https://fishshell.com via the Installer on Mac
-- Use https://github.com/starship/starship as prompt
-- Use https://github.com/Schniz/fnm as Node version manager
-- Manually [download and install](https://getcomposer.org/download/) Composer in custom `~/.bin` directory
+Install [Homebrew](https://brew.sh):
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Using `brew`:
+
+```sh
+brew install fira-code  # Font
+brew install fish       # Fish Shell
+brew install starship   # Starship prompt
+brew install fnm        # Fish Node Manager
+brew install php        # PHP
+brew install composer   # Composer
+brew install golang     # Go
+```
 
 # Fish Config
 
 ```
-❯ cat config.fish 
-starship init fish | source
-fnm env --multi | source
+❯ cat config.fish
+ 
+if status --is-interactive
+  starship init fish | source
+  fnm env --multi | source
+  eval (/opt/homebrew/bin/brew shellenv)
+  set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
+  set -U fish_user_paths /opt/homebrew/sbin $fish_user_paths
+end
 ```
 
-# Fish User Path
-
-```
-# adds fnm binaries to the executable paths
-set -U fish_user_paths ~/.fnm/ $fish_user_paths
-# adds a custom ~/.bin to the executable paths
-set -U fish_user_paths ~/.bin $fish_user_paths
-```
+Install the terminal profile under `resources/FishPro.terminal` by double-clicking on it.
