@@ -1,8 +1,10 @@
-Install [Homebrew](https://brew.sh):
+# Install [Homebrew](https://brew.sh):
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+# Install essentials
 
 Using `brew`:
 
@@ -29,5 +31,7 @@ if status --is-interactive
   set -U fish_user_paths /opt/homebrew/sbin $fish_user_paths
 end
 ```
+
+# Set up macOS terminal
 
 Install the terminal profile under `resources/FishPro.terminal` by double-clicking on it.
