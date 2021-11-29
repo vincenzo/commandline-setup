@@ -32,6 +32,12 @@ if status --is-interactive
 end
 ```
 
+# Change default shell
+
+```
+chsh -s $(which fish)
+```
+
 # Set up macOS terminal
 
 Install the terminal profile under `resources/FishPro.terminal` by double-clicking on it.
