@@ -6,6 +6,8 @@
 
 # Install essentials
 
+[Fira Code](https://github.com/tonsky/FiraCode), [Fish](https://fishshell.com/), [Starship](https://starship.rs), [FNM](https://fnm.vercel.app/), [PHP](https://php.org/), [Composer](https://getcomposer.org/), [Go](https://go.dev/).
+
 Using `brew`:
 
 ```sh
@@ -41,3 +43,8 @@ chsh -s $(which fish)
 # Set up macOS terminal
 
 Install the terminal profile under `resources/FishPro.terminal` by double-clicking on it.
+
+<hr/>
+
+![starship](https://user-images.githubusercontent.com/76583/144025882-81190416-d7b0-4cf2-8c4c-17bfba58d386.gif)
+
